@@ -1,0 +1,16 @@
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  your_job_name_here:
+    runs-on: ubuntu-latest
+    name: your job description here
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Run index.js
+        uses: ./
+        id: your-job-id
+        with:
+          your-first-input: "Hello World!"

@@ -1,0 +1,10 @@
+name: "Your Name Here"
+description: "Your description here"
+inputs:
+  your-first-input:
+    description: "your first input"
+    required: true
+    default: ""
+runs:
+  using: "node16"
+  main: "dist/index.js"
